@@ -8,5 +8,6 @@ target 'whipapp' do
   # Pods for whipapp
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'KRProgressHUD'
 
 end

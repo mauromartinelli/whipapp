@@ -3,17 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		246B104F244FA2BB00B5900A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246B104E244FA2BB00B5900A /* AppDelegate.swift */; };
 		246B1051244FA2BB00B5900A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246B1050244FA2BB00B5900A /* SceneDelegate.swift */; };
-		246B1053244FA2BB00B5900A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246B1052244FA2BB00B5900A /* ViewController.swift */; };
 		246B1056244FA2BB00B5900A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246B1054244FA2BB00B5900A /* Main.storyboard */; };
 		246B1059244FA2BB00B5900A /* whipapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 246B1057244FA2BB00B5900A /* whipapp.xcdatamodeld */; };
 		246B105B244FA2BC00B5900A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246B105A244FA2BC00B5900A /* Assets.xcassets */; };
 		246B105E244FA2BC00B5900A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246B105C244FA2BC00B5900A /* LaunchScreen.storyboard */; };
+		24CFFDAF24521D6100542D22 /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDA924521D6100542D22 /* SchedulePresenter.swift */; };
+		24CFFDB024521D6100542D22 /* ScheduleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDAA24521D6100542D22 /* ScheduleWorker.swift */; };
+		24CFFDB124521D6100542D22 /* ScheduleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDAB24521D6100542D22 /* ScheduleRouter.swift */; };
+		24CFFDB224521D6100542D22 /* ScheduleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDAC24521D6100542D22 /* ScheduleModels.swift */; };
+		24CFFDB324521D6100542D22 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDAD24521D6100542D22 /* ScheduleViewController.swift */; };
+		24CFFDB424521D6100542D22 /* ScheduleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDAE24521D6100542D22 /* ScheduleInteractor.swift */; };
+		24CFFDB824521EA700542D22 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDB724521EA700542D22 /* RestApiManager.swift */; };
+		24CFFDBA2452201F00542D22 /* ScheduleViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDB92452201F00542D22 /* ScheduleViewController+TableView.swift */; };
+		24CFFDBD245220C300542D22 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDBC245220C300542D22 /* Meal.swift */; };
+		24CFFDC02452218500542D22 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDBF2452218500542D22 /* MealTableViewCell.swift */; };
+		24CFFDC324522F5500542D22 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDC224522F5500542D22 /* Label.swift */; };
+		24CFFDC72452419000542D22 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDC62452419000542D22 /* Image.swift */; };
 		94994ABFC690E03894C4F0FB /* Pods_whipapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36225B2A9893FCEE8E7AFA /* Pods_whipapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +33,23 @@
 		246B104B244FA2BB00B5900A /* whipapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whipapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		246B104E244FA2BB00B5900A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		246B1050244FA2BB00B5900A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		246B1052244FA2BB00B5900A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		246B1055244FA2BB00B5900A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		246B1058244FA2BB00B5900A /* whipapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = whipapp.xcdatamodel; sourceTree = "<group>"; };
 		246B105A244FA2BC00B5900A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		246B105D244FA2BC00B5900A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		246B105F244FA2BC00B5900A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CFFDA924521D6100542D22 /* SchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
+		24CFFDAA24521D6100542D22 /* ScheduleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWorker.swift; sourceTree = "<group>"; };
+		24CFFDAB24521D6100542D22 /* ScheduleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRouter.swift; sourceTree = "<group>"; };
+		24CFFDAC24521D6100542D22 /* ScheduleModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModels.swift; sourceTree = "<group>"; };
+		24CFFDAD24521D6100542D22 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		24CFFDAE24521D6100542D22 /* ScheduleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInteractor.swift; sourceTree = "<group>"; };
+		24CFFDB724521EA700542D22 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		24CFFDB92452201F00542D22 /* ScheduleViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleViewController+TableView.swift"; sourceTree = "<group>"; };
+		24CFFDBC245220C300542D22 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		24CFFDBF2452218500542D22 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		24CFFDC224522F5500542D22 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		24CFFDC62452419000542D22 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		3F49D42D99B8D32A8AB61C8D /* Pods-whipapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whipapp.release.xcconfig"; path = "Target Support Files/Pods-whipapp/Pods-whipapp.release.xcconfig"; sourceTree = "<group>"; };
 		DE36225B2A9893FCEE8E7AFA /* Pods_whipapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whipapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,9 +87,12 @@
 		246B104D244FA2BB00B5900A /* whipapp */ = {
 			isa = PBXGroup;
 			children = (
+				24CFFDC124522F2F00542D22 /* Utils */,
+				24CFFDBB245220AB00542D22 /* Models */,
+				24CFFDB524521E8300542D22 /* Services */,
+				24CFFDA724521D4900542D22 /* Scenes */,
 				246B104E244FA2BB00B5900A /* AppDelegate.swift */,
 				246B1050244FA2BB00B5900A /* SceneDelegate.swift */,
-				246B1052244FA2BB00B5900A /* ViewController.swift */,
 				246B1054244FA2BB00B5900A /* Main.storyboard */,
 				246B105A244FA2BC00B5900A /* Assets.xcassets */,
 				246B105C244FA2BC00B5900A /* LaunchScreen.storyboard */,
@@ -75,6 +100,62 @@
 				246B1057244FA2BB00B5900A /* whipapp.xcdatamodeld */,
 			);
 			path = whipapp;
+			sourceTree = "<group>";
+		};
+		24CFFDA724521D4900542D22 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				24CFFDA824521D5000542D22 /* Schedule */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		24CFFDA824521D5000542D22 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				24CFFDBE2452216900542D22 /* Views */,
+				24CFFDA924521D6100542D22 /* SchedulePresenter.swift */,
+				24CFFDAA24521D6100542D22 /* ScheduleWorker.swift */,
+				24CFFDAB24521D6100542D22 /* ScheduleRouter.swift */,
+				24CFFDAC24521D6100542D22 /* ScheduleModels.swift */,
+				24CFFDAD24521D6100542D22 /* ScheduleViewController.swift */,
+				24CFFDB92452201F00542D22 /* ScheduleViewController+TableView.swift */,
+				24CFFDAE24521D6100542D22 /* ScheduleInteractor.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		24CFFDB524521E8300542D22 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				24CFFDB724521EA700542D22 /* RestApiManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		24CFFDBB245220AB00542D22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24CFFDBC245220C300542D22 /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24CFFDBE2452216900542D22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24CFFDBF2452218500542D22 /* MealTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24CFFDC124522F2F00542D22 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				24CFFDC224522F5500542D22 /* Label.swift */,
+				24CFFDC62452419000542D22 /* Image.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9640E86021C58BAA12235CB8 /* Frameworks */ = {
@@ -91,7 +172,6 @@
 				14EFD8847667BC60BB11DAC8 /* Pods-whipapp.debug.xcconfig */,
 				3F49D42D99B8D32A8AB61C8D /* Pods-whipapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,9 +290,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246B1053244FA2BB00B5900A /* ViewController.swift in Sources */,
+				24CFFDC02452218500542D22 /* MealTableViewCell.swift in Sources */,
+				24CFFDB224521D6100542D22 /* ScheduleModels.swift in Sources */,
+				24CFFDB124521D6100542D22 /* ScheduleRouter.swift in Sources */,
+				24CFFDB424521D6100542D22 /* ScheduleInteractor.swift in Sources */,
+				24CFFDC72452419000542D22 /* Image.swift in Sources */,
+				24CFFDBD245220C300542D22 /* Meal.swift in Sources */,
+				24CFFDB324521D6100542D22 /* ScheduleViewController.swift in Sources */,
 				246B1059244FA2BB00B5900A /* whipapp.xcdatamodeld in Sources */,
+				24CFFDAF24521D6100542D22 /* SchedulePresenter.swift in Sources */,
+				24CFFDB824521EA700542D22 /* RestApiManager.swift in Sources */,
+				24CFFDBA2452201F00542D22 /* ScheduleViewController+TableView.swift in Sources */,
 				246B104F244FA2BB00B5900A /* AppDelegate.swift in Sources */,
+				24CFFDB024521D6100542D22 /* ScheduleWorker.swift in Sources */,
+				24CFFDC324522F5500542D22 /* Label.swift in Sources */,
 				246B1051244FA2BB00B5900A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
