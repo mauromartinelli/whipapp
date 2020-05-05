@@ -46,6 +46,7 @@ class ScheduleViewController: UIViewController, ScheduleDisplayLogic, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Plan your week"
+        self.getRandomMeals(amount: 7)
     }
     
     func displayRandomMeals(viewModel: Schedule.ViewModel) {

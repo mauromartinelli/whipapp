@@ -13,6 +13,7 @@
 		246B1059244FA2BB00B5900A /* whipapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 246B1057244FA2BB00B5900A /* whipapp.xcdatamodeld */; };
 		246B105B244FA2BC00B5900A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246B105A244FA2BC00B5900A /* Assets.xcassets */; };
 		246B105E244FA2BC00B5900A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246B105C244FA2BC00B5900A /* LaunchScreen.storyboard */; };
+		247678262461E79900EAA8DF /* ScheduleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247678252461E79900EAA8DF /* ScheduleViewControllerTests.swift */; };
 		24CFFDAF24521D6100542D22 /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDA924521D6100542D22 /* SchedulePresenter.swift */; };
 		24CFFDB024521D6100542D22 /* ScheduleWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDAA24521D6100542D22 /* ScheduleWorker.swift */; };
 		24CFFDB124521D6100542D22 /* ScheduleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFFDAB24521D6100542D22 /* ScheduleRouter.swift */; };
@@ -28,6 +29,16 @@
 		94994ABFC690E03894C4F0FB /* Pods_whipapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36225B2A9893FCEE8E7AFA /* Pods_whipapp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2476781E2461E52F00EAA8DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 246B1043244FA2BB00B5900A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 246B104A244FA2BB00B5900A;
+			remoteInfo = whipapp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		14EFD8847667BC60BB11DAC8 /* Pods-whipapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whipapp.debug.xcconfig"; path = "Target Support Files/Pods-whipapp/Pods-whipapp.debug.xcconfig"; sourceTree = "<group>"; };
 		246B104B244FA2BB00B5900A /* whipapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whipapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +49,9 @@
 		246B105A244FA2BC00B5900A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		246B105D244FA2BC00B5900A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		246B105F244FA2BC00B5900A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247678192461E52F00EAA8DF /* whipappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whipappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2476781D2461E52F00EAA8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247678252461E79900EAA8DF /* ScheduleViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewControllerTests.swift; sourceTree = "<group>"; };
 		24CFFDA924521D6100542D22 /* SchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
 		24CFFDAA24521D6100542D22 /* ScheduleWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWorker.swift; sourceTree = "<group>"; };
 		24CFFDAB24521D6100542D22 /* ScheduleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRouter.swift; sourceTree = "<group>"; };
@@ -63,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		247678162461E52F00EAA8DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				246B104D244FA2BB00B5900A /* whipapp */,
+				2476781A2461E52F00EAA8DF /* whipappTests */,
 				246B104C244FA2BB00B5900A /* Products */,
 				EC02EB06931E5E42EE63B699 /* Pods */,
 				9640E86021C58BAA12235CB8 /* Frameworks */,
@@ -80,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				246B104B244FA2BB00B5900A /* whipapp.app */,
+				247678192461E52F00EAA8DF /* whipappTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +123,31 @@
 				246B1057244FA2BB00B5900A /* whipapp.xcdatamodeld */,
 			);
 			path = whipapp;
+			sourceTree = "<group>";
+		};
+		2476781A2461E52F00EAA8DF /* whipappTests */ = {
+			isa = PBXGroup;
+			children = (
+				247678232461E77F00EAA8DF /* Scenes */,
+				2476781D2461E52F00EAA8DF /* Info.plist */,
+			);
+			path = whipappTests;
+			sourceTree = "<group>";
+		};
+		247678232461E77F00EAA8DF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				247678242461E78700EAA8DF /* Schedule */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		247678242461E78700EAA8DF /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				247678252461E79900EAA8DF /* ScheduleViewControllerTests.swift */,
+			);
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		24CFFDA724521D4900542D22 /* Scenes */ = {
@@ -197,6 +245,24 @@
 			productReference = 246B104B244FA2BB00B5900A /* whipapp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		247678182461E52F00EAA8DF /* whipappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 247678222461E52F00EAA8DF /* Build configuration list for PBXNativeTarget "whipappTests" */;
+			buildPhases = (
+				247678152461E52F00EAA8DF /* Sources */,
+				247678162461E52F00EAA8DF /* Frameworks */,
+				247678172461E52F00EAA8DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2476781F2461E52F00EAA8DF /* PBXTargetDependency */,
+			);
+			name = whipappTests;
+			productName = whipappTests;
+			productReference = 247678192461E52F00EAA8DF /* whipappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +275,11 @@
 				TargetAttributes = {
 					246B104A244FA2BB00B5900A = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					247678182461E52F00EAA8DF = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+						TestTargetID = 246B104A244FA2BB00B5900A;
 					};
 				};
 			};
@@ -226,6 +297,7 @@
 			projectRoot = "";
 			targets = (
 				246B104A244FA2BB00B5900A /* whipapp */,
+				247678182461E52F00EAA8DF /* whipappTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,6 +310,13 @@
 				246B105E244FA2BC00B5900A /* LaunchScreen.storyboard in Resources */,
 				246B105B244FA2BC00B5900A /* Assets.xcassets in Resources */,
 				246B1056244FA2BB00B5900A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		247678172461E52F00EAA8DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +387,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		247678152461E52F00EAA8DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247678262461E79900EAA8DF /* ScheduleViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2476781F2461E52F00EAA8DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 246B104A244FA2BB00B5900A /* whipapp */;
+			targetProxy = 2476781E2461E52F00EAA8DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		246B1054244FA2BB00B5900A /* Main.storyboard */ = {
@@ -482,6 +577,49 @@
 			};
 			name = Release;
 		};
+		247678202461E52F00EAA8DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL6D5F78E9;
+				INFOPLIST_FILE = whipappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.whipappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whipapp.app/whipapp";
+			};
+			name = Debug;
+		};
+		247678212461E52F00EAA8DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YL6D5F78E9;
+				INFOPLIST_FILE = whipappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.whipappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whipapp.app/whipapp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -499,6 +637,15 @@
 			buildConfigurations = (
 				246B1063244FA2BC00B5900A /* Debug */,
 				246B1064244FA2BC00B5900A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		247678222461E52F00EAA8DF /* Build configuration list for PBXNativeTarget "whipappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				247678202461E52F00EAA8DF /* Debug */,
+				247678212461E52F00EAA8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
